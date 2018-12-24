@@ -1,0 +1,40 @@
+{
+  "name": "mern_twitter",
+  "version": "1.0.0",
+  "description": "A Twitter Clone written in the MERN Stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nramabad/MERN_Twitter.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "Express",
+    "React",
+    "Node",
+    "Twitter"
+  ],
+  "author": "Navaneet Ramabadran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nramabad/MERN_Twitter/issues"
+  },
+  "homepage": "https://github.com/nramabad/MERN_Twitter#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
