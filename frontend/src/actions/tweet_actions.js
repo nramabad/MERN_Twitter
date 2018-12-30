@@ -16,10 +16,12 @@ export const receiveUserTweets = tweets => ({
     tweets
 });
 
-export const receiveNewTweet = tweet => ({
+export const receiveNewTweet = tweet => {
+    debugger
+    return {
     type: RECEIVE_NEW_TWEET,
     tweet
-})
+}}
 
 export const fetchTweets = () => dispatch => (
     getTweets()
@@ -35,7 +37,9 @@ export const fetchUserTweets = id => dispatch => (
 
 export const composeTweet = data => dispatch => {
     debugger
-    (writeTweet(data)
+    return (
+    writeTweet(data)
         .then(tweet => dispatch(receiveNewTweet(tweet)))
-        .catch(err => console.log(err)))
+        .catch(err => console.log(err))
+)
 };

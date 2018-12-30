@@ -13,7 +13,6 @@ const TweetsReducer = (state = { all: {}, user: {}, new: undefined }, action) =>
             newState.user = action.tweets.data;
             return newState;
         case RECEIVE_NEW_TWEET:
-            debugger
             newState.new = action.tweet.data
             return newState;
         default:
