@@ -7,7 +7,7 @@ import { logout } from '../../actions/session_actions';
 
 import React from 'react';
 import { Link } from 'react-router-dom'
-import './navbar.css'
+// import './navbar.css'
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -52,7 +52,6 @@ class NavBar extends React.Component {
     }
 }
 
-export default NavBar;
 
 const mapStateToProps = state => ({
     loggedIn: state.session.isAuthenticated
